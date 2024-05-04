@@ -12,8 +12,10 @@ function Home(): React.JSX.Element {
 
   return (
     <View style={styles.container}>
-      <Button title="Tasks" onPress={() => navigate('Tasks')} />
-      <Button title="List" onPress={() => navigate('List')} />
+      <View style={styles.buttonContainer}>
+        <Button title="Tasks" onPress={() => navigate('Tasks')} />
+        <Button title="List" onPress={() => navigate('List')} />
+      </View>
     </View>
   );
 }

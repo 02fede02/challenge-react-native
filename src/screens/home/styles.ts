@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  buttonContainer: {
+    gap: 12,
+    width: '80%',
+  },
 });
 
 export default styles;
