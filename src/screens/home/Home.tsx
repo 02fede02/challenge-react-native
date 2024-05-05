@@ -1,9 +1,10 @@
 import React from 'react';
-import {Button, View} from 'react-native';
+import {View} from 'react-native';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
 import RootStackParamList from '../../interfaces/navigation/RootStackParamList';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {Button} from '../../components';
 
 type HomeScreenProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 
@@ -12,10 +13,8 @@ function Home(): React.JSX.Element {
 
   return (
     <View style={styles.container}>
-      <View style={styles.buttonContainer}>
-        <Button title="Tasks" onPress={() => navigate('Tasks')} />
-        <Button title="List" onPress={() => navigate('List')} />
-      </View>
+      <Button onPress={() => navigate('Tasks')} title="Tasks" />
+      <Button onPress={() => navigate('List')} title="List" />
     </View>
   );
 }
