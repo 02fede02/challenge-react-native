@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {FlatList, Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import StoreProp from '../../interfaces/redux/StoreProp';
 import {addTask} from '../../redux/slices/TasksSlice';
 import AddNewTaskModal from './AddNewTaskModal';
 import {Button} from '../../components';
 import styles from './styles';
+import {StoreProp} from '../../interfaces';
 
 function Tasks(): React.JSX.Element {
   const [showAddNewTask, setShowAddNewTask] = useState<boolean>(false);
@@ -41,7 +41,9 @@ function Tasks(): React.JSX.Element {
             {item}
           </Text>
         )}
-        ListEmptyComponent={<Text style={styles.text}>Create a new task</Text>}
+        ListEmptyComponent={
+          <Text style={styles.text}>You don't have any task, create one!</Text>
+        }
       />
       <AddNewTaskModal
         handleAddTask={handleAddTask}

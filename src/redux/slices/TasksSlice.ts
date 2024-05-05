@@ -1,5 +1,5 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
-import TasksSliceProp from '../../interfaces/redux/TasksSliceProp';
+import {TasksSliceProp} from '../../interfaces';
 
 const initialState: TasksSliceProp = {
   tasks: [],

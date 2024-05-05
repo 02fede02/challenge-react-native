@@ -1,7 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit';
 import TasksSlice from './slices/TasksSlice';
-import StoreProp from '../interfaces/redux/StoreProp';
-// ...
+import {StoreProp} from '../interfaces';
 
 const store = configureStore<StoreProp>({
   reducer: {

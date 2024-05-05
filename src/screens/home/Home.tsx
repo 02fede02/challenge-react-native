@@ -2,9 +2,9 @@ import React from 'react';
 import {View} from 'react-native';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
-import RootStackParamList from '../../interfaces/navigation/RootStackParamList';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Button} from '../../components';
+import {RootStackParamList} from '../../interfaces';
 
 type HomeScreenProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 

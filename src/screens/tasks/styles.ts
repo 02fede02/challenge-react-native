@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     color: 'black',
-    paddingStart: 5,
+    paddingStart: 15,
   },
   listText: {
     alignSelf: 'center',
