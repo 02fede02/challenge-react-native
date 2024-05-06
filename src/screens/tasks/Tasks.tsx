@@ -25,7 +25,11 @@ function Tasks(): React.JSX.Element {
 
   return (
     <View style={styles.container}>
-      <Button title="New Task" onPress={() => setShowAddNewTask(true)} />
+      <Button
+        testID="newTask"
+        title="New Task"
+        onPress={() => setShowAddNewTask(true)}
+      />
       <FlatList
         showsVerticalScrollIndicator={false}
         data={tasks}

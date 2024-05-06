@@ -20,6 +20,7 @@ function List(): React.JSX.Element {
   return (
     <View>
       <FlatList
+        testID="flatList"
         contentContainerStyle={styles.flatList}
         data={elements}
         keyExtractor={item => item.id}

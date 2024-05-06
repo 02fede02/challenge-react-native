@@ -4,6 +4,7 @@ import styles from './styles';
 
 type Props = {
   title: string;
+  testID?: string;
   onPress: () => void;
   disable?: boolean;
   style?: ViewStyle;
@@ -11,12 +12,14 @@ type Props = {
 
 function Button({
   title,
+  testID,
   onPress,
   disable = false,
   style,
 }: Props): React.JSX.Element {
   return (
     <TouchableOpacity
+      testID={testID}
       style={[styles.container, {...style}, disable && styles.containerDisable]}
       onPress={onPress}
       disabled={disable}>
